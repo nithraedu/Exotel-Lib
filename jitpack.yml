@@ -1,0 +1,5 @@
+jdk:
+  - openjdk17
+install:
+  - FILE="-Dfile=exoverify-2.0.1-release.aar"
+  - mvn install:install-file $FILE -DgroupId=org.bitbucket.Exotel -DartifactId=exoverify -Dversion=1.6.1 -Dpackaging=aar -DgeneratePom=true
